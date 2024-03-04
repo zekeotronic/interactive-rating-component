@@ -177,10 +177,3 @@ p.hover {
   height: 32px;
   width: 193px;
 }
-
-@media screen and (max-width: 376px) {
-  main #pre-rate,
-  main #post-rate {
-    width: 80%;
-  }
-}
