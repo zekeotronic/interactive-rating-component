@@ -40,6 +40,9 @@
   font-weight: 700;
   letter-spacing: 2px;
 }
+.bold {
+  font-weight: 700;
+}
 .body {
   font-size: 15px;
   line-height: 24px;
@@ -71,8 +74,82 @@
     rgba(24, 30, 39, 1) 100%
   );
 }
+.circle {
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  background-color: var(--dark-blue);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.rating-row {
+  display: flex;
+  gap: 22px;
+  align-items: center;
+}
+.button {
+  border-radius: 22.5px;
+  background-color: var(--orange);
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 body {
   font-family: "Overpass", sans-serif;
   font-size: 15px;
   background-color: var(--very-dark-blue);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+main {
+  width: 412px;
+  height: 416px;
+  border-radius: 30px;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.rating-btn {
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  position: absolute;
+  z-index: 999;
+}
+
+.hover p,
+p.hover {
+  color: var(--pure-white);
+}
+.rating-row div.hover {
+  cursor: pointer;
+  background-color: var(--orange);
+  & p {
+    color: var(--pure-white);
+  }
+}
+#submit-btn.hover {
+  cursor: pointer;
+  /* color: var(--orange); */
+  background-color: var(--pure-white);
+}
+
+#submit-btn.hover p,
+#submit-btn.hover p.hover {
+  color: var(--orange);
+}
+
+.active {
+  background-color: var(--medium-grey);
+  & p {
+    color: var(--pure-white);
+    background-color: transparent;
+  }
 }
