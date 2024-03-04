@@ -29,7 +29,10 @@ function toggleHover(e) {
   btn.parentElement.classList.toggle('hover');
 }
 
-
+function toggleHoverBtn(e) {
+  const btn = e.target;
+  btn.classList.toggle('hover');
+}
 
 const ratingBtns = document.querySelectorAll('.rating-btn');
 
@@ -41,5 +44,5 @@ ratingBtns.forEach(btn => {
   btn.addEventListener('mouseout', toggleHover);
 })
 
-submitBtn.addEventListener('mouseover', toggleHover);
-submitBtn.addEventListener('mouseout', toggleHover);
+submitBtn.addEventListener('mouseover', toggleHoverBtn);
+submitBtn.addEventListener('mouseout', toggleHoverBtn);
