@@ -1,0 +1,81 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --dark-blue: #262e38;
+  --light-grey: #969fad;
+  --medium-grey: #7c8798;
+  --orange: #fc7614;
+  --pure-white: #ffffff;
+  --very-dark-blue: #131518;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap");
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+.h-lg {
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: 0px;
+}
+.rating {
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+}
+.h-md {
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+.body {
+  font-size: 15px;
+  line-height: 24px;
+  letter-spacing: 0px;
+}
+.dark-blue {
+  color: var(--dark-blue);
+}
+.light-grey {
+  color: var(--light-grey);
+}
+.medium-grey {
+  color: var(--medium-grey);
+}
+.orange {
+  color: var(--orange);
+}
+.pure-white {
+  color: var(--pure-white);
+}
+.very-dark-blue {
+  color: var(--very-dark-blue);
+}
+.black-gradient {
+  background: rgb(35, 42, 52);
+  background: radial-gradient(
+    circle,
+    rgba(35, 42, 52, 1) 0%,
+    rgba(24, 30, 39, 1) 100%
+  );
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: var(--very-dark-blue);
+}
