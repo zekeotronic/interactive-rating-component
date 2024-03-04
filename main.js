@@ -1,5 +1,4 @@
 let rating = 0;
-const one = document.getElementById('rate-1');
 
 function toggleActive(e) {
   const btn = e.target;
@@ -20,6 +19,7 @@ function toggleActive(e) {
       btn.parentElement.classList.remove('active');
     }
   });
+  document.getElementById('rating-result').textContent = `You selected ${rating} out of 5`
   console.log("Rating",rating);
 }
 
@@ -46,3 +46,9 @@ ratingBtns.forEach(btn => {
 
 submitBtn.addEventListener('mouseover', toggleHoverBtn);
 submitBtn.addEventListener('mouseout', toggleHoverBtn);
+submitBtn.addEventListener('click', () => {
+  if (rating > 0) {
+    document.getElementById('pre-rate').style.display = 'none';
+    document.getElementById('post-rate').style.display = 'flex';
+  }
+})

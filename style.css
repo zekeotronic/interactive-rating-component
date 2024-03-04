@@ -88,6 +88,9 @@
   gap: 22px;
   align-items: center;
 }
+.text-center {
+  text-align: center;
+}
 .button {
   border-radius: 22.5px;
   background-color: var(--orange);
@@ -107,12 +110,24 @@ body {
   height: 100vh;
 }
 main {
+  border-radius: 30px;
+}
+main #pre-rate {
   width: 412px;
   height: 416px;
-  border-radius: 30px;
   padding: 32px;
   display: flex;
   flex-direction: column;
+  gap: 30px;
+}
+
+main #post-rate {
+  width: 412px;
+  height: 416px;
+  padding: 45px 32px;
+  display: none;
+  flex-direction: column;
+  align-items: center;
   gap: 30px;
 }
 
@@ -151,5 +166,21 @@ p.hover {
   & p {
     color: var(--pure-white);
     background-color: transparent;
+  }
+}
+#results-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 22.5px;
+  background-color: var(--dark-blue);
+  height: 32px;
+  width: 193px;
+}
+
+@media screen and (max-width: 376px) {
+  main #pre-rate,
+  main #post-rate {
+    width: 80%;
   }
 }
